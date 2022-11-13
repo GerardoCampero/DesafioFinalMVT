@@ -1,0 +1,12 @@
+{% extends 'FinaApp/index.html' %}
+
+{% block contenido %}
+
+<h4>¿Qué Músico deseas buscar?</h4>
+<p>
+<a class="navbar-brand" href="{% url 'buscar-bajista' %}">Bajista</a>
+<a class="navbar-brand" href="{% url 'buscar-baterista' %}">Baterista</a>
+<a class="navbar-brand" href="{% url 'buscar-guitarrista' %}">Guitarrista</a>
+</p>
+
+{% endblock %}

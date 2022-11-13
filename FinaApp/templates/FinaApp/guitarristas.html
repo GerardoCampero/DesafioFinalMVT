@@ -1,0 +1,15 @@
+{% extends 'FinaApp/index.html' %}
+
+{% block contenido %}
+<p>
+<form action="" method="post">
+
+    {% csrf_token %}
+    
+    {{ formulario.as_p }}
+
+    <input type="submit" value="Guardar Guitarrista">
+</form>
+</p>
+
+{% endblock %}

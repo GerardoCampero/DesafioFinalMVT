@@ -1,0 +1,25 @@
+{% extends 'FinaApp/index.html' %}
+
+{% block contenido %}
+<p>
+<form action="" method="get">
+    Nombre Bajista: <input type="text" name="nombre_bajista">
+    <input type="submit" value="Buscar!">
+</form>
+</p>
+
+
+{% if lista_bajistas %}
+
+    <ul>
+        {% for bass in lista_bajistas %}
+        <ul>
+            <p>Nombre: {{bass.nombre}}</p> 
+            <p>Apellido: {{bass.apellido}}</p> 
+            <p>Edad: {{bass.edad}}</p>  
+            <p>Email: {{bass.email}}</p>
+        </ul>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}
